@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: process.env.NODE_ENV === "production" ? "/tokyo-activities" : "",
-  devIndicators: false,
+  devIndicators: { buildActivity: false },
   images: {
     unoptimized: true,
     remotePatterns: [
